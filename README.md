@@ -43,7 +43,6 @@ A API segue a separação de responsabilidades para garantir um código limpo e 
 
 Para iniciar o servidor localmente, execute no terminal:
 
--bash-
 uvicorn main:app --reload
 
 
@@ -53,7 +52,7 @@ uvicorn main:app --reload
 
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)](https://github.com/oliveiraalexandredaniel-lgtm/task-diet.git)
-   cd seu-repositorio
+   git clone https://github.com/oliveiraalexandredaniel-lgtm/task-diet.git
+   cd task-diet
 
    http://127.0.0.1:8000/docs (servidor)
