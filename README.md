@@ -43,7 +43,7 @@ A API segue a separação de responsabilidades para garantir um código limpo e 
 
 Para iniciar o servidor localmente, execute no terminal:
 
-```bash
+-bash-
 uvicorn main:app --reload
 
 
