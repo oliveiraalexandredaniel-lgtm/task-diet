@@ -16,8 +16,9 @@
 - [ ] Criar endpoint `POST /shopping-list` (Recebe IDs de receitas e quantidade de porções)
 - [ ] Lógica para somar e agrupar ingredientes duplicados
 - [ ] Retornar o JSON consolidado da lista de compras
+- [ ] Testes + documentação
 
-## 🔴 Sprint 4: Refinamento, Testes e Apresentação (Dias 36 a 45)
+## 🔴 Sprint 4: Front-end (Dias 36 a 45)
 - [ ] Popular o banco com dados de teste (pelo menos 10 receitas variadas)
 - [ ] Testar todos os endpoints pelo Swagger (`/docs`)
-- [ ] Gravar demonstração / preparar slides para a apresentação acadêmica
+- [ ] Refinamentos finais
