@@ -13,9 +13,7 @@
 - [ ] Implementar filtro por restrições dietéticas (Query params por tags)
 
 ## 🟢 Sprint 3: Lista de Compras e Regras de Negócio (Dias 26 a 35)
-- [ ] Criar endpoint `POST /shopping-list` (Recebe IDs de receitas e quantidade de porções)
-- [ ] Lógica para somar e agrupar ingredientes duplicados
-- [ ] Retornar o JSON consolidado da lista de compras
+- [ ] Shopping-list endpoint: POST com agregação de ingredientes (com json)
 - [ ] Testes + documentação
 
 ## 🔴 Sprint 4: Front-end (Dias 36 a 45)
