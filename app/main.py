@@ -12,6 +12,15 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="API de Receitas - Projeto")
 
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Permite requisições do front-end
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # 1. Rota para Cadastrar Receita com Ingredientes
 @app.post(
@@ -57,3 +66,48 @@ def list_recipes(
         query = query.filter(Recipe.tags.contains(tag))
 
     return query.all()
+
+from app.schemas import ConsolidatedIngredient, ShoppingListRequest
+
+
+# 3. Rota para Buscar Receita por ID
+@app.get("/recipes/{recipe_id}", response_model=RecipeResponse)
+def get_recipe(recipe_id: int, db: Session = Depends(get_db)):
+    recipe = db.query(Recipe).filter(Recipe.id == recipe_id).first()
+    if not recipe:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Receita não encontrada",
+        )
+    return recipe
+
+
+# 4. Rota para Gerar Lista de Compras Consolidada (US04)
+@app.post(
+    "/shopping-list/", response_model=List[ConsolidatedIngredient]
+)
+def generate_shopping_list(
+    payload: ShoppingListRequest, db: Session = Depends(get_db)
+):
+    consolidated = {}
+
+    for item in payload.items:
+        recipe = db.query(Recipe).filter(Recipe.id == item.recipe_id).first()
+        if not recipe:
+            continue
+
+        for ing in recipe.ingredients:
+            # Chave única para agrupar pelo nome e unidade de medida
+            key = (ing.name.strip().lower(), ing.unit.strip().lower())
+            total_amount = ing.amount * item.servings
+
+            if key in consolidated:
+                consolidated[key]["amount"] += total_amount
+            else:
+                consolidated[key] = {
+                    "name": ing.name,
+                    "amount": total_amount,
+                    "unit": ing.unit,
+                }
+
+    return list(consolidated.values())

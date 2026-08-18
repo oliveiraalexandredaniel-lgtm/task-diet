@@ -32,3 +32,18 @@ class RecipeResponse(BaseModel):
 
     class Config:
         from_attributes = True
+
+    # Schemas para Lista de Compras
+class RecipeItemRequest(BaseModel):
+    recipe_id: int
+    servings: int = 1
+
+
+class ShoppingListRequest(BaseModel):
+    items: List[RecipeItemRequest]
+
+
+class ConsolidatedIngredient(BaseModel):
+    name: str
+    amount: float
+    unit: str
