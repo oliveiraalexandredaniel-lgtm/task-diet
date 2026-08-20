@@ -1,5 +1,10 @@
 # 🥗 Task-Diet - API de Receitas e Planejamento
 
+## 🎨 Protótipo da Interface
+
+Você pode conferir o design e a experiência do usuário do **Task Diet** diretamente no Figma:
+👉 [Acessar Protótipo Interativo no Figma](https://www.figma.com/make/Vnd0Xlh4g3PuFkEqVyTnek/Prototipo-aplicativo-receitas?p=f&t=kUcEqMCC9Mktrpkv-0&fullscreen=1)
+
 
 > **TaskDiet** é uma API RESTful em Python (FastAPI) para planejamento de refeições, gestão de restrições alimentares e geração automatizada de listas de compras.
 ---
