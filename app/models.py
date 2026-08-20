@@ -3,18 +3,16 @@ from sqlalchemy.orm import relationship
 
 from app.database import Base
 
-
 class Recipe(Base):
     __tablename__ = "recipes"
 
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String, nullable=False)
-    prep_time = Column(Integer, nullable=False)
-    tags = Column(String, default="")
+    prep_time = Column(Integer)
+    tags = Column(String)
+    instructions = Column(String, nullable=True)  # <-- ADICIONE ESTA LINHA
 
-    ingredients = relationship(
-        "Ingredient", back_populates="recipe", cascade="all, delete-orphan"
-    )
+    ingredients = relationship("Ingredient", back_populates="recipe", cascade="all, delete")
 
 
 class Ingredient(Base):
