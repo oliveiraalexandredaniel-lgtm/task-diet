@@ -27,6 +27,37 @@ Você pode conferir o design e a experiência do usuário do **Task Diet** diret
 
 ---
 
+# 📋 Backlog do Produto & Registro das Sprints
+
+Documentação das User Stories, prioridades, estimativas (story points) e cronograma das Sprints para o projeto **Task Diet**.
+
+---
+
+## 📌 Backlog do Produto
+
+| Rank | Prioridade | User Story | Estimativa | Sprint |
+| :---: | :---: | :--- | :---: | :---: |
+| **1** | Alta | **Como desenvolvedor/administrador**, quero um script automatizado (`seed.py`) para popular o banco de dados com receitas pré-definidas e categorizadas. | 3 | 1 |
+| **2** | Alta | **Como um usuário com restrição alimentar**, quero filtrar as receitas por tags específicas (ex: sem lactose, sem glúten, vegano) para encontrar apenas pratos seguros para minha dieta. | 5 | 2 |
+| **3** | Média | **Como um usuário buscando inspiração rápida**, quero pesquisar receitas digitando o nome do prato ou ingrediente na barra de busca para localizar o que preciso em poucos segundos. | 5 | 2 |
+| **4** | Média | **Como um cozinheiro iniciante**, quero visualizar os ingredientes detalhados (quantidade/unidade) e o modo de preparo completo para conseguir reproduzir a receita sem erros. | 5 | 3 |
+
+---
+
+## 📅 Registro das Sprints
+
+| Sprint | Previsão | Status | Histórico / Entregas |
+| :---: | :---: | :---: | :--- |
+| **01** | 05/04/2026 | **Concluído** | Backend & Banco de Dados (API FastAPI, SQLite, Models, Schemas e Seed de dados) |
+| **02** | 03/05/2026 | **Em andamento** | Front-end Web & Integração com a API (Interface em HTML/CSS/JS, Busca e Filtros por Tags) |
+| **03** | 31/05/2026 | **A fazer** | Detalhes da Receita (Modo de preparo, modal/cards expandidos e polimento visual final) |
+
+---
+
+*Nota: As estimativas utilizam a escala de Story Points baseada em Fibonacci.*
+
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 * **Linguagem:** Python 3.11+
