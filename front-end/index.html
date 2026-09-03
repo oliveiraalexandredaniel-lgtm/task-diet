@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Diet - Receitas</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo">🥗 HealthWorld</div>
+        <div class="user-avatar">FATEC</div>
+    </header>
+    
+    <!-- Hero Section Verde -->
+    <section class="hero">
+        <span class="badge">12 RECEITAS DISPONÍVEIS</span>
+        <h1>Cozinha do jeito certo, para o seu jeito de comer.</h1>
+        <p>Filtre por restrições alimentares e encontre a receita perfeita para hoje.</p>
+        
+        <!-- Busca -->
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Buscar por nome, ingrediente...">
+        </div>
+        
+        <!-- Seção de Receitas (Grid) -->
+        <main class="content">
+            <div class="content-header">
+          <h2>Receitas</h2>
+          <span id="results-count">12 resultados</span>
+        </div>
+    
+        <!-- Os cards serão inseridos aqui pelo JavaScript -->
+        <div class="recipes-grid" id="recipes-container"></div>
+      </main>
+        <!-- Filtros de Tags -->
+        <!-- Botoes de Filtro de Tag -->
+        <div class="tags-container">
+            <button class="tag-btn active" data-tag="todas">Todas</button>
+            <button class="tag-btn" data-tag="vegano">🌱 Vegano</button>
+            <button class="tag-btn" data-tag="sem glúten">⚡ Sem Glúten</button>
+            <button class="tag-btn" data-tag="sem lactose">🥛 Sem Lactose</button>
+            <button class="tag-btn" data-tag="proteico">⚡ Proteico</button>
+        </div>
+        
+        <!-- Container onde os cards do JS vão aparecer -->
+        <div class="recipes-grid" id="recipes-container"></div>
+        
+        
+    <script src="main.js"></script>
+    </section>
+    
+
+  <script src="app.js"></script>
+</body>
+</html>

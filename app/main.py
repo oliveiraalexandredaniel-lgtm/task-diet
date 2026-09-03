@@ -7,6 +7,21 @@ from app.database import Base, engine, get_db
 from app.models import Ingredient, Recipe
 from app.schemas import RecipeCreate, RecipeResponse
 
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI()
+
+# Permite requisições vindas do Live Server
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], # Libera acesso para qualquer origem em desenvolvimento
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+
 # Cria as tabelas do banco no arranque
 Base.metadata.create_all(bind=engine)
 
