@@ -89,8 +89,12 @@ function renderRecipes() {
       .map(tag => `<span class="card-tag">${tag.trim()}</span>`)
       .join('');
 
+    // Imagem da receita com fallback caso venha vazia
+    const imgUrl = recipe.image_url ? recipe.image_url : 'https://via.placeholder.com/400x200?text=Sem+Foto';
+
     card.innerHTML = `
       <div class="card-header">
+        <img src="${imgUrl}" alt="${recipe.title}" class="recipe-img">
         <div class="card-tags-badge">${tagsHtml}</div>
       </div>
       <div class="card-body">
@@ -116,7 +120,7 @@ async function showRecipeDetails(recipeId) {
     let ingredientsListHtml = '<li>Ingredientes não especificados.</li>';
     if (recipe.ingredients && recipe.ingredients.length > 0) {
       ingredientsListHtml = recipe.ingredients
-        .map(ing => `<li><strong>${ing.name}</strong>: ${ing.quantity || ''} ${ing.unit || ''}</li>`)
+        .map(ing => `<li><strong>${ing.name}</strong>: ${ing.amount || ing.quantity || ''} ${ing.unit || ''}</li>`)
         .join('');
     }
 
@@ -132,7 +136,7 @@ async function showRecipeDetails(recipeId) {
           <ul>${ingredientsListHtml}</ul>
           
           <h4>👨‍🍳 Modo de Preparo:</h4>
-          <p class="instructions">${recipe.instructions || 'Modo de preparo não informado.'}</p>
+          <p class="instructions" style="white-space: pre-line;">${(recipe.instructions || recipe.preparation_method || 'Modo de preparo não informado.').replace(/\\n|\n/g, '<br>')}</p>
         </div>
       </div>
     `;

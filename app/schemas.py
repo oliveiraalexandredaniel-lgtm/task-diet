@@ -1,4 +1,3 @@
-# app/schemas.py
 from typing import List, Optional
 from pydantic import BaseModel
 
@@ -19,7 +18,9 @@ class IngredientResponse(IngredientCreate):
 class RecipeCreate(BaseModel):
     title: str
     prep_time: int
-    tags: Optional[str] = ""  # Ex: "vegano,sem_gluten"
+    tags: Optional[str] = ""
+    instructions: Optional[str] = None
+    image_url: Optional[str] = None
     ingredients: List[IngredientCreate]
 
 
@@ -28,12 +29,15 @@ class RecipeResponse(BaseModel):
     title: str
     prep_time: int
     tags: Optional[str]
+    instructions: Optional[str] = None
+    image_url: Optional[str] = None
     ingredients: List[IngredientResponse]
 
     class Config:
         from_attributes = True
 
-    # Schemas para Lista de Compras
+
+# Schemas para Lista de Compras
 class RecipeItemRequest(BaseModel):
     recipe_id: int
     servings: int = 1

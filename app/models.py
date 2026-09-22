@@ -11,6 +11,7 @@ class Recipe(Base):
     prep_time = Column(Integer)
     tags = Column(String)
     instructions = Column(String, nullable=True)  # <-- ADICIONE ESTA LINHA
+    image_url = Column(String, nullable=True)  # <-- A LINHA É ADICIONADA AQUI!
 
     ingredients = relationship("Ingredient", back_populates="recipe", cascade="all, delete")
 

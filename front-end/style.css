@@ -168,3 +168,24 @@
     font-weight: bold;
     border-color: #ffffff;
   }
+/* Estilo da Imagem do Card */
+.recipe-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  display: block;
+}
+
+/* Garante que os títulos e textos dentro do card fiquem visíveis (cor escura) */
+.card-body h3 {
+  color: #2c3e50;
+  margin: 10px 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.card-body .prep-time {
+  color: #555555;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
