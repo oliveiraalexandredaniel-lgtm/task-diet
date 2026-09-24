@@ -2,6 +2,17 @@
 
 ## 🎨 Protótipo da Interface
 
+## 💡 Definição do Problema & Ideação
+
+### 1. Definição do Problema
+Pessoas com restrições alimentares (como intolerância a lactose, celíacos ou adeptos do veganismo) enfrentam dificuldades frequentes para encontrar receitas adequadas de forma rápida, segura e sem poluição visual. A maioria dos sites de culinária mistura pratos genéricos sem filtros eficientes por restrição, tornando a busca frustrante e demorada.
+
+### 2. Ideação (A Solução)
+O **Task Diet** foi idealizado como uma plataforma minimalista e intuitiva focada em:
+- **Centralização por Tags:** Filtragem instantânea de receitas por necessidades específicas (Sem Glúten, Sem Lactose, Vegano, etc.).
+- **Busca Rápida:** Localização de pratos por nome ou ingredientes em poucos cliques.
+- **Experiência Limpa:** Interface direta ao ponto, destacando apenas o que importa (ingredientes e modo de preparo) sem distrações.
+
 Você pode conferir o design e a experiência do usuário do **Task Diet** diretamente no Figma:
 👉 [Acessar Protótipo Interativo no Figma](https://www.figma.com/make/Vnd0Xlh4g3PuFkEqVyTnek/Prototipo-aplicativo-receitas?p=f&t=kUcEqMCC9Mktrpkv-0&fullscreen=1)
 
