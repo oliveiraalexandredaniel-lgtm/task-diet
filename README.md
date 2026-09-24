@@ -60,7 +60,7 @@ Documentação das User Stories, prioridades, estimativas (story points) e crono
 | :---: | :---: | :---: | :--- |
 | **01** | 20/08/2026 | **Concluído** | Backend & Banco de Dados (API FastAPI, SQLite, Models, Schemas e Seed de dados) |
 | **02** | 30/08/2026 | **Concluído** | Front-end Web & Integração com a API (Interface em HTML/CSS/JS, Busca e Filtros por Tags) |
-| **03** | 10/09/2026 | **A fazer** | Detalhes da Receita (Modo de preparo, modal/cards expandidos e polimento visual final) |
+| **03** | 10/09/2026 | **Concluído** | Detalhes da Receita (Modo de preparo, modal/cards expandidos e polimento visual final) |
 
 ---
 
