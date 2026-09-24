@@ -1,6 +1,5 @@
 # 🥗 Task-Diet - API de Receitas e Planejamento
 
-## 🎨 Protótipo da Interface
 
 ## 💡 Definição do Problema & Ideação (resumidamente e no modelo do design thinking)
 
