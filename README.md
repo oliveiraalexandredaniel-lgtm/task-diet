@@ -79,6 +79,7 @@ A API segue a separação de responsabilidades para garantir um código limpo e 
 
 Para iniciar o servidor localmente, execute no terminal:
 
+python -m app.seed
 uvicorn app.main:app --reload
 
 ---
