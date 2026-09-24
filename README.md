@@ -2,7 +2,7 @@
 
 ## 🎨 Protótipo da Interface
 
-## 💡 Definição do Problema & Ideação
+## 💡 Definição do Problema & Ideação (resumidamente e no modelo do design thinking)
 
 ### 1. Definição do Problema
 Pessoas com restrições alimentares (como intolerância a lactose, celíacos ou adeptos do veganismo) enfrentam dificuldades frequentes para encontrar receitas adequadas de forma rápida, segura e sem poluição visual. A maioria dos sites de culinária mistura pratos genéricos sem filtros eficientes por restrição, tornando a busca frustrante e demorada.
