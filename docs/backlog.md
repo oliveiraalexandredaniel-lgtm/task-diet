@@ -10,15 +10,15 @@
 
 ## 🟡 Sprint 2: Carga de Dados Realistas & Interface Front-end (15 dias)
 - [x] Criar e executar o `seed.py` para popular o banco com 15+ receitas reais do cotidiano
-- [ ] Criar a interface web (HTML/CSS/JS)
-- [ ] Tela de Catalogo: Listagem de receitas com barra de busca e filtros por tags
-- [ ] Tela de Detalhes: Exibição completa de ingredientes e modo de preparo
-- [ ] Tela de Lista de Compras: Seleção de porções e geração do checklist consolidado
+- [x] Criar a interface web (HTML/CSS/JS)
+- [x] Tela de Catalogo: Listagem de receitas com barra de busca e filtros por tags
+- [x] Tela de Detalhes: Exibição completa de ingredientes e modo de preparo
+- [x] Tela de Lista de Compras: Seleção de porções e geração do checklist consolidado
 
 ## 🔵 Sprint 3: Integração, Polimento & Finalização (15 dias)
-- [ ] Conectar o Front-end à API (requisições via `fetch`)
-- [ ] Ajustes visuais, responsividade e correção do `.gitignore`
-- [ ] Testes finais de ponta a ponta e atualização do `README.md`
+- [x] Conectar o Front-end à API (requisições via `fetch`)
+- [x] Ajustes visuais, responsividade e correção do `.gitignore`
+- [x] Testes finais de ponta a ponta e atualização do `README.md`
 
 
 US01 - Busca de Receitas por Tag (Restrição Alimentar)
